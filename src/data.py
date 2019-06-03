@@ -4,7 +4,7 @@ import requests
 import zipfile
 
 
-DATA_URL = 'http://www.itl.nist.gov/iaui/vip/cs_links/EMNIST/matlab.zip'
+DATA_URL = 'http://www.itl.nist.gov/iaui/vip/cs_links/EMNIST/gzip.zip'
 DOWNLOAD_PATH = "data"
 
 
@@ -53,4 +53,4 @@ def read_data(download_dir=DOWNLOAD_PATH):
 def get_data(url=DATA_URL, download_dir=DOWNLOAD_PATH):
     download_data(url=url, download_dir=download_dir)
     extract_data(download_dir=download_dir)
-    read_data(download_dir=download_dir)
+    # read_data(download_dir=download_dir)
